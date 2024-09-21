@@ -1,0 +1,467 @@
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+
+header{
+    background: linear-gradient(45deg,yellow,blue);
+    height:100vh;
+    border:#f0f0f0;
+    font-size: 1.2rem;
+}
+
+.home-content {
+    font-size: 3rem;
+}
+.angle-down-icon{
+font-size:large;
+}
+
+
+.container{
+    max-width:1200px;
+    width:90%;
+    margin:auto;
+    
+    /*background-color: rgb(233, 207, 169);*/
+}
+
+section{
+    top:50%;
+        
+    /*border: 5px solid brown;  */
+}
+.navbar{
+    position:fixed;
+    width:100%;
+    z-index:500;   /*can be anything*/
+    background-color: rgba(248, 243, 240,0.6);
+    /*backdrop-filter: blur(5px); */
+    border-radius: 10px;
+    
+}
+
+.navbar-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height:64px;
+}
+.navbar-container .brand{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-container img{
+width:50px;
+height:50px;
+padding:10px;
+}
+
+.about-me a{
+    color:#0f0a69;
+}
+.about-me a:hover{
+    color:red;
+}
+
+
+.menu-items{
+    display: flex;
+}
+
+.menu-items li{
+    list-style: none;
+    padding:1rem;
+}
+
+.menu-items a{
+   text-decoration: none;
+   color:rgb(0, 5, 9);
+   font-size: 1.2rem;
+   padding:0.3rem;
+}
+
+.menu-items a:hover{
+    border-bottom: 2px solid #031922af;
+}
+
+.home-content .name{
+    position: absolute;
+    text-align: center;
+    top:47%;
+    left:50%;
+    color:#04222e;
+    min-width:auto;
+    padding:40px 30px;
+    font-size:5rem;
+    transform: translate(-50%,-50%);        //half of the element will be moved/translated on x and y axis.
+    text-shadow: 0px 0px 8px rgba(0, 0, 0, 0.5);
+    background: rgba(225, 219, 216, 0.553);
+    /*backdrop-filter: blur(30px); */
+    border-radius:5px; 
+}
+
+.home-content .name h1{
+    font-size: 2.2rem;
+    text-align: center;
+}
+
+.home-content .name p{
+    color:hwb(210 97% 2%);
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.angle-down-icon{
+    position: absolute;
+    bottom:10%;
+    left:50%;
+    font-size: 2rem;
+    border-radius: 50%;
+    border:2px solid aliceblue;
+    transform: translate(-50%,-50%);
+}
+
+.angle-down-icon a{
+    text-decoration: none;
+    color:aliceblue;
+    padding:1rem;
+}
+
+
+
+
+.about-me{
+    background: linear-gradient(30deg,blue,yellow);
+    padding:2rem 1rem;
+    min-height: 100vh;
+   top:50%;
+   width:100%;
+   font-size:2rem;
+    /*border:5px solid black;*/
+}
+
+.about-me .about-heading{
+    color:#f5ede7;
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    
+}
+
+.about-content img{
+    height:200px;
+    width:250px;
+    object-fit:cover;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.about-content p{
+    font-size: 1.5rem;
+    color:rgb(248, 244, 249);
+    padding: 2.3rem;
+    text-align: center;
+}
+
+.skills .skills-heading{
+    font-size: 2rem;
+    font-weight: 600;
+    color:#f2f0ec;
+    text-align: center;
+}
+
+.about-me .about-content{
+    display: flex;
+    flex-wrap: nowrap;
+    /*  border: 5px solid burlywood;  */
+    height:auto;
+    min-width:1200px;
+   padding: 80px;
+   width:100%;
+   justify-content: space-evenly;
+   
+}
+ 
+.about-content .left-content{
+    flex-basis: 50%;
+    text-align:center;
+    height: auto;
+   /* border: 5px solid brown; */
+}
+
+.about-content .right-content{
+    flex-basis: 50%;
+  /* border: 2px solid rgb(241, 21, 58); */
+   height:auto;
+   
+}
+
+.skills-bar{
+    padding:25px 30px;
+   /*  border: 5px solid black; */
+}
+
+.skills-bar .bar{
+    margin:25px 0;
+}
+
+.skills-bar .bar .info span{
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.skills-bar .bar .info{
+    margin-bottom: 8px;
+    color:#f0f0e6;
+}
+
+.skills-bar .bar .progress-line{
+    position: relative;
+    height:10px;
+    width:550px;
+    background: #f0f0e6;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: anim1 1s cubic-bezier(1, 0, 0.5, 1) forwards;
+}
+
+.bar .progress-line span{
+    position: absolute;
+    background: #1105f6;
+    height:100%;
+    border-radius: 10px;
+    transform: scaleX(0);
+    transform-origin: left;
+    animation: anim1 1s 1s cubic-bezier(1, 0, 0.5, 1) forwards; /*cubic-bezier takes 4 coordinates,  */
+    /*animation attribute takes anim-name,time-duration of animation,animation-type */
+}
+
+@keyframes anim1{
+    100%{
+        transform: scaleX(1);    /*at the extreme end,or end of animation we want its 100% to be at 1 */
+    }                               /*without mentioning keyframes we wont be able to see the animation on screen */
+}
+
+.progress-line .Html{       /*just specifies it shud show/move 80% On the progress line */
+    width:80%;
+}
+
+
+.progress-line .Css{
+    width:70%;
+}
+
+
+.progress-line .Bootstrap{
+    width:70%;
+}
+
+
+.progress-line .Javascript{
+    width:50%;
+}
+
+
+.progress-line .PHP{
+    width:50%;
+}
+
+.bar .progress-line span::before{
+    position: absolute;
+    content:'';
+    height:0;
+    right:0;
+    top:-12px;
+    width:0;
+    border:7px solid transparent;
+    border-bottom-width: 0px;
+    border-right-width: 0px;
+    border-top-style: #f0f0f0;
+    border-top-color: #f0f0f0;
+}
+
+.bar .progress-line span::after{
+    position: absolute;
+    right:0;
+    top:-28px;
+    color:#07374a;
+    font-size: 12px;
+    font-weight: 700;
+    background: #f0f0e6;
+    padding:1px 8px;
+    border-radius: 3px;
+    
+}
+
+.progress-line .Html::after{        /*content attribute here shows up kinda like a tooltip specifying the given % in a box-like format. */
+    content:"80%";
+}
+
+.progress-line .Css::after{
+    content:"70%";
+}
+
+.progress-line .Bootstrap::after{
+    content:"70%";
+}
+
+.progress-line .Javascript::after{
+    content:"50%";
+}
+
+.progress-line .PHP::after{
+    content:"50%";
+}
+
+
+
+
+#my-works{
+    background: linear-gradient(65deg,blue,rgb(230, 230, 41));
+    min-height:100vh;
+   /*  border: 5px solid black; */
+    text-align: center;
+    padding:80px;
+    width:100%;
+    gap:20px;
+    text-align: center;
+}
+#my-works .proj-heading{
+    font-size: 1.5rem;
+    padding: 30px 20px;
+   
+}
+
+.proj-1{
+    display: flex;
+    text-align:center; 
+    justify-content: center;
+    padding:10px;
+     gap:30px;
+
+     /* border: 5px solid black; */
+}
+
+.proj-1 .proj1-details{
+    padding-top: 40px;
+    gap:10px;
+    
+}
+.proj-2 .proj2-details{
+    padding-top: 40px;
+    gap:10px;
+}
+
+.proj-2{
+    display: flex;
+    text-align: center;   
+    justify-content: center;
+    padding:10px;
+    gap:30px;
+}
+
+.proj-1 img{
+   
+    height:180px;
+    width:200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 15px;
+    margin-bottom: 15px;
+   
+}
+
+.proj-2 img{
+  
+    height:180px;
+    width:200px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.proj-1 button{
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 20px;
+    list-style: none;
+    
+}
+.proj-1 button a:hover{
+color:red;
+padding:5px;
+}
+.proj-2 button{
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 20px;
+}
+.proj-2 button a:hover{
+    color:red;
+    padding:5px;
+    }
+.my-works button:hover{
+    color:red;
+}
+
+.more-work{
+    /*border: 5px solid red;  */
+    font-size: 1.5rem;
+    padding: 30px 20px;
+   
+}
+.more-work a{
+    color: white;
+    
+   
+}
+.more-work a:hover{
+    color: red;
+}
+
+
+.contact-content a{
+    text-decoration: none;
+    padding: 1.5rem;
+    font-size: 1.2rem;
+    color:#000406;
+    
+}
+.contact-content h2{
+    color:black;
+}
+
+.contact-content a:hover{
+color:red;
+}
+
+.contact .contact-content{
+color:white;
+padding:20px;
+}
+
+
+.footer{
+padding:20px;
+font-size: 1.2rem;
+background-color:#2a20e5;
+}
+footer a:hover{
+    color:red;
+}
+.links a{
+    padding-top:50px;
+}
