@@ -684,21 +684,6 @@ ul {
 
     }
 
-    @keyframes hue-rotate {
-        0% {
-            background-color: oklch(0.7 0.3 0);
-        }
-
-        /* Red */
-        100% {
-            background-color: oklch(0.7 0.3 360);
-        }
-
-        /* Full rotation */
-    }
-
-
-
     .about-me {
         top: 30px;
         margin: 0;
