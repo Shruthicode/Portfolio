@@ -1,13 +1,16 @@
 <!doctype html>
-<html>
+<html lang="en">
 
 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
 <head>
-  
+
   <title>SHRUTHI</title>
-  <link rel="stylesheet" href="s3.css">
-  <link rel="shortcut icon" href="./img/fbavatar_1630400663387_6838396024049256103.png" type="image/x-icon">  
-  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="Portfolio.css">
+  <link rel="shortcut icon" href="./img/fbavatar_1630400663387_6838396024049256103.png" type="image/x-icon">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -16,8 +19,33 @@
       <div class="navbar-container">
         <div class="brand">
           <img src="portfolio.png" alt="logo">
-          <h1 class="navbar-brand">SHRUTHI SAMPLE PAGE!!</h1>
-          </div>
+          <h1 class="navbar-brand">SHRUTHI SAMPLE PORTFOLIO!!</h1>
+        </div>
+
+
+        <div class="dark-mode-toggle">
+
+          <button type="button" id="darkSwitch" class="switch">
+            <span class="slider"></span>
+          </button>
+        </div>
+        <script>
+          const switchButton = document.getElementById('darkSwitch');
+          const body = document.body;
+
+          // Add event listener to the button
+          switchButton.addEventListener('click', () => {
+            // Toggle dark mode class on body
+            body.classList.toggle('dark-mode');
+            body.classList.toggle('light-mode');
+
+            // Toggle active state for the button
+            switchButton.classList.toggle('active');
+          });
+
+        </script>
+
+
         <ul class="menu-items">
           <li><a href="#about">About</a></li>
           <li><a href="#my-works">Portfolio</a></li>
@@ -31,33 +59,34 @@
         <p>A Web Developer in training.</p>
       </div>
       <div class="angle-down-icon">
-        <a href="#about"><i class="fas fa-angle-down"></i></a>
+        <a href="#about"><i class="fa-solid fa-angles-down"></i></a>
       </div>
     </div>
   </header>
-  
-<section class="about-me" id="about">
+
+  <section class="about-me" id="about">
     <div class="container">
       <div class="about-content">
         <div class="left-content">
           <div>
-           <h1 class="about-heading">About Me</h1>
-          </div> 
+            <h1 class="about-heading">About Me</h1>
+          </div>
           <img src="AvatarMaker (1).png" alt="image" />
           <p>
-            I am Shruthi, a BE-I.T student, studied at Vasavi College of Engineering.
-            I really enjoy creating and designing web pages and experimenting with it. Its always fun Designing websites!!!
+            I am Shruthi, a Front End Web Developer.
+            I really enjoy creating and designing web pages and experimenting with it. Its always fun Designing
+            websites!!!
           </p>
           <div class="work-arrow">
             <p>
               <a href="#my-works">Check out my work <i class="fas fa-arrow-down"></i></a>
             </p>
-            
+
           </div>
         </div>
 
         <div class="skills">
-          <div class="right-content">
+          <div class="right-content new-line">
             <div>
               <h1 class="skills-heading">My Skills</h1>
             </div>
@@ -102,85 +131,113 @@
         </div>
       </div>
     </div>
- </section>
-  
+  </section>
 
- <section id="my-works">
+
+  <section id="my-works">
     <div class="portfolio">
       <div class="proj-heading">
         <h1>Portfolio</h1>
       </div>
-      
+
       <div class="portfolio-content-container">
         <div class="proj-1">
-          <img src="project1.jpg" alt="picture">
+          <img src="Project1.png" alt="picture">
           <div class="proj1-details">
             <i class="fab fa-html5"></i>
             <i class="fab fa-css3-alt"></i>
             <i class="fab fa-js"></i>
             <h2>Personal SAMPLE Portfolio Website</h2>
-            <p>Build Using HTML and CSS</p>
-            <button><a href="#" target="blank">View source <i
-              class="fas fa-external-link-alt"></i></a>
+            <p>Build Using HTML,CSS and JS</p>
+            <button><a href="#" target="_blank">View source<i class="fas fa-external-link-alt"></i></a>
             </button>
-            <button><a href="#" target="blank">Try it Live <i
-              class="fas fa-external-link-alt"></i></a>
+            <button><a href="#" target="blank">Try it Live<i class="fas fa-external-link-alt"></i></a>
             </button>
           </div>
         </div>
-        
+
         <div class="proj-2">
-          <img src="project2.jpg" alt="picture2">
+          <img src="Project2.png" alt="picture2">
           <div class="proj2-details">
             <i class="fab fa-html5"></i>
             <i class="fab fa-css3-alt"></i>
             <h2>A SAMPLE Technical Documentation Page </h2>
-            <p>Build Using HTML,CSS</p>
-            <button><a href="" target="blank">View source <i
-              class="fas fa-external-link-alt"></i></a>
+            <p>Build Using HTML and CSS</p>
+            <button><a href="" target="blank">View source<i class="fas fa-external-link-alt"></i></a>
             </button>
-            <button><a href="" target="blank">Try it Live <i
-              class="fas fa-external-link-alt"></i></a>
+            <button><a href="" target="blank">Try it Live<i class="fas fa-external-link-alt"></i></a>
             </button>
-           </div>
+          </div>
         </div>
 
-        <div class="more-work">
-          <p>
-            More
-          </p>
-          <a href="" target="blank">CodePen/GitHub</a>
+
+
+        <div class="proj-3">
+          <img src="Project3.png" alt="picture">
+          <div class="proj3-details">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <h2>A Basic Calculator</h2>
+            <p>Build Using HTML,CSS and JS</p>
+            <button><a href="#" target="_blank">View source<i class="fas fa-external-link-alt"></i></a>
+            </button>
+            <button><a href="#" target="blank">Try it Live<i class="fas fa-external-link-alt"></i></a>
+            </button>
+          </div>
         </div>
 
+
+        <div class="proj-4">
+          <img src="Project4.png" alt="picture">
+          <div class="proj4-details">
+            <i class="fab fa-html5"></i>
+            <i class="fab fa-css3-alt"></i>
+            <i class="fab fa-js"></i>
+            <h2>Digital Countdown Alaram</h2>
+            <p>Build Using HTML,CSS and JS</p>
+            <button><a href="#" target="_blank">View source<i class="fas fa-external-link-alt"></i></a>
+            </button>
+            <button><a href="#" target="blank">Try it Live<i class="fas fa-external-link-alt"></i></a>
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
-  </section>
-  
-  
-  <footer class="footer">
-  <div class="contact" id="contact-me">
-    <div class="container">
-      <div class="contact-content">
-        <h2>Contact Me</h2>
-        <p class="mail">
-          Get in touch with me <i class="fas fa-arrow-right"></i><a href="" target="blank">shru456@ymail.com</a>
+      <div class="more-work">
+        <p>
+          More
         </p>
-        
-        <p class="links">Or find me on:</p>
-        <a href="#" target="blank"><i class="fab fa-linkedin">
-            Linkedin</i></a>
-        <a href="#" target="blank"><i class="fab fa-codepen"> CodePen</i></a>
-        <a href="#" target="blank"><i class="fab fa-github"></i> Github</a>
-        <a href="#" target="blank"><i class="fab fa-dev"></i> Dev Community</a>
-        <a href="#" target="blank"><i class="fab fa-twitter"> Twitter</i></a>
-        <a href="#" target="blank"><i class="fab fa-instagram"></i> Instagram</a>
+        <a href="" target="blank">CodePen/GitHub</a>
       </div>
     </div>
-  </div>
-</footer>
 
+  </section>
+
+
+  <footer class="footer">
+    <div class="contact" id="contact-me">
+      <div class="contact-container">
+        <div class="contact-content">
+          <h2>Contact Me</h2>
+          <p class="mail">
+            Get in touch with me <i class="fas fa-arrow-right"></i><a href="" target="blank">shru456@ymail.com</a>
+          </p>
+          <label for="links">Or find me on:</label>
+          <ul class="links" id="links">
+            <li><a href="#" target="blank"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+            <li><a href="#" target="blank"><i class="fab fa-codepen"></i> CodePen</a></li>
+            <li><a href="#" target="blank"><i class="fab fa-github"></i> Github</a></li>
+            <li><a href="#" target="blank"><i class="fab fa-dev"></i> Dev Community</a></li>
+            <li><a href="#" target="blank"><i class="fab fa-twitter"></i> Twitter</a></li>
+            <li><a href="#" target="blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/66aa7c98b3.js" crossorigin="anonymous"></script>
 
 </body>
 
 </html>
-
