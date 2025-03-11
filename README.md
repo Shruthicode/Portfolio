@@ -26,6 +26,6 @@
 - JavaScript
 
 <h2> Contact Information</h2>
-- Email: jshruthi199@gmail.com
+<p>Email: jshruthi199@gmail.com</p>
 
 
