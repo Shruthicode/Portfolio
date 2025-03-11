@@ -1,31 +1,31 @@
 # SAMPLE PORTFOLIO 
-# DESCRIPTION:
-This is a sample code project of my portfolio with few of my projects mentioned in it.
-## Projects
-### Project 1: My Sample Portfolio Website.
-## Tech Stack: 
+<h2>DESCRIPTION:</h2>
+<p>This is a sample code project of my portfolio with few of my projects mentioned in it.</p>
+ <h2>Projects</h2>
+<h2> Project 1: My Sample Portfolio Website.</h2>
+<h3> Tech Stack: </h3>
 - HTML
 - CSS
 - JavaScript
 
-### Project 2: A SAMPLE Technical Documentation Page 
-## Tech Stack: 
+<h2>Project 2: A SAMPLE Technical Documentation Page </h2>
+<h3> Tech Stack: </h3>
 - HTML
 - CSS
 
-### Project 3: A Basic Calculator
-## Tech Stack: 
-- HTML
-- CSS
-- JavaScript
-
-### Project 4: A Digital Countdown Alaram
-## Tech Stack: 
+<h2>Project 3: A Basic Calculator</h2>
+<h3> Tech Stack: </h3>
 - HTML
 - CSS
 - JavaScript
 
-## Contact Information
+<h2> Project 4: A Digital Countdown Alaram</h2>
+<h3> Tech Stack: </h3>
+- HTML
+- CSS
+- JavaScript
+
+<h2> Contact Information</h2>
 - Email: jshruthi199@gmail.com
 
 
